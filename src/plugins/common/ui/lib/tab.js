@@ -132,7 +132,8 @@ define([
 						if (groupedComponents[j] &&
 							1 === groupedComponents[j].length &&
 						    groupedComponents[j].charCodeAt(0) === 10) {
-							group.append($('<div>', {'unselectable': 'on'}));
+							//We dont want things to run onto a second row
+							//group.append($('<div>', {'unselectable': 'on'}));
 						} else {
 							componentName = groupedComponents[j];
 							elem = $('<span>', {'unselectable': 'on'});

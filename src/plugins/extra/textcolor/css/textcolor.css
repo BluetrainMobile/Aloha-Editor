@@ -62,4 +62,5 @@
 
 .aloha .ui-icon.aloha-icon-textcolor{
 	background-image: none;
+	border: 1px solid #fff;
 }
