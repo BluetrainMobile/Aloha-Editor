@@ -204,7 +204,16 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 ----------------------------------*/
 .aloha .ui-widget { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1.1em/*{fsDefault}*/; }
 .aloha .ui-widget .ui-widget { font-size: 1em; }
+
 .aloha .ui-widget input, .aloha .ui-widget select, .aloha .ui-widget textarea, .aloha .ui-widget button { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1em; }
+
+/* BTM Update for image tab */ 
+.aloha .ui-widget label.aloha-image-input-label input {
+	display:block;
+	border:1px solid #d3d3d3;
+}
+
+
 .aloha .ui-widget-content { border: 1px solid #aaaaaa/*{borderColorContent}*/; background: #ffffff/*{bgColorContent}*/; color: #fff/*{fcContent}*/; }
 .aloha .ui-widget-content a { color: #222222/*{fcContent}*/; }
 .aloha .ui-widget-header { border: 1px solid #aaaaaa/*{borderColorHeader}*/; background: #cccccc/*{bgColorHeader}*/; color: #fff/*{fcHeader}*/; font-weight: bold; }
@@ -212,7 +221,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 
 /* Interaction states
 ----------------------------------*/
-.aloha .ui-state-default, .aloha .ui-widget-content .ui-state-default, .aloha .ui-widget-header .ui-state-default { border: 1px solid #d3d3d3/*{borderColorDefault}*/; background: #e6e6e6/*{bgColorDefault}*/; font-weight: normal/*{fwDefault}*/; color: #555555/*{fcDefault}*/; }
+.aloha .ui-state-default, .aloha .ui-widget-content .ui-state-default, .aloha .ui-widget-header .ui-state-default { border: 1px solid rgba(0,0,0,0.7)/*{borderColorDefault}*/; background: rgba(0,0,0,0.7)/*{bgColorDefault}*/; font-weight: normal/*{fwDefault}*/; color: #fff/*{fcDefault}*/; }
 .aloha .ui-state-default a, .aloha .ui-state-default a:link, .aloha .ui-state-default a:visited { color: #555555/*{fcDefault}*/; text-decoration: none; }
 .aloha .ui-state-hover, .aloha .ui-widget-content .ui-state-hover, .aloha .ui-widget-header .ui-state-hover, .aloha .ui-state-focus, .aloha .ui-widget-content .ui-state-focus, .aloha .ui-widget-header .ui-state-focus { border: 1px solid #999999/*{borderColorHover}*/; background: #dadada/*{bgColorHover}*/; font-weight: normal/*{fwDefault}*/; color: #212121/*{fcHover}*/; }
 .aloha .ui-state-hover a, .aloha .ui-state-hover a:hover { color: #212121/*{fcHover}*/; text-decoration: none; }

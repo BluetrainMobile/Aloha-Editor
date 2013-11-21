@@ -1,104 +1,78 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>Getting Started with Aloha Editor</title>
-	<link rel="stylesheet" href="index.css" type="text/css">
-	<link rel="stylesheet" href="../../css/aloha.css" type="text/css">
+	<link rel="stylesheet" href="index.css">
+	
+	<!--
+	<link rel="stylesheet" href="../../css/aloha-common-extra.css" type="text/css">
+	<link rel="stylesheet" href="/official/aloha-official/src/css/aloha-common-extra.css" type="text/css">
+
+
+	-->
+	<link rel="stylesheet" href="../../css/aloha-common-extra.css" type="text/css">
+
+
+
+
+	<!--
+		All configuration for Aloha Editor for this demo is stored in js/aloha-config.js
+		It can also be placed inline here before loading Aloha Editor itself.
+	-->
+	<script src="aloha-config.js"></script>
 	<script src="../../lib/require.js"></script>
 	<script src="../../lib/vendor/jquery-1.7.2.js"></script>
+    <script>
+	  // Passing jQuery into Aloha explicitly is not necessary since
+	  // newer versions of jQuery will make a call to define which will
+	  // be picked up in aloha.js
+	  //Aloha.settings.jQuery = $.noConflict(true);
+    </script>
+	<!--
+		Load the Aloha Editor library.
+		The plugin list could also be added to the configuration.
+	-->
+	<!-- Don't commit the sourceview plugin to the list of enabled plugins! -->
+	<script src="../../lib/aloha.js"
+	        data-aloha-plugins="
+common/ui,
+common/format,
+common/table,
+common/list,
+common/link,
+common/highlighteditables,
+common/undo,
+common/contenthandler,
+common/paste,
+common/commands,
+common/block,
+common/image,
+common/align,
+extra/formatlesspaste,
+extra/listenforcer,
+extra/metaview,
+extra/linkbrowser,
+extra/imagebrowser
+"></script>
+	<!-- Include the fake-jquery to make sure that Aloha works even if
+		 the user includes his own global jQuery after aloha.js. -->
+	<script src="fake-jquery.js"></script>
 
 
-<script>
-	(function(window, undefined) {
-
-	Aloha = window.Aloha || {};
-
-	Aloha.settings = {
-		locale: 'en',
-		ribbon: false,
-		plugins: {
-			format: {
-				config: [  'b', 'i', 'p', 'h1', 'h2', 'h3', 'removeFormat' ]
-			},
-			list: {
-				// all elements with no specific configuration get an UL, just for fun :)
-				config: [ 'ul', 'ol' ],
-				editables: {
-					// Even if this is configured it is not set because OL and UL are not allowed in H1.
-					'#top-text': []
-				}
-			},
-			image: {
-				config:{
-					'fixedAspectRatio' : false,
-					'maxWidth'         : 600,
-					'minWidth'         : 20,
-					'maxHeight'        : 600,
-					'minHeight'        : 20,
-					'globalselector'   : '.global',
-					'ui': {
-						'oneTab': true
-					}
-				},
-				'fixedAspectRatio' : false,
-				'maxWidth'         : 600,
-				'minWidth'         : 20,
-				'maxHeight'        : 600,
-				'minHeight'        : 20,
-				'globalselector'   : '.global',
-				'ui': {
-					'oneTab' : true,
-					'align'  : false,
-					'margin' : false
-				}
-			},
-			'textcolor': {
-				// configure a set of colors for all editables
-				config: ['#fff', 'rgb(255,0,0)', '#FFFF00', '#FFFFFF', 'greenborder'],
-				editables: {
-					// configure a different set of colors for editable #one
-					'#top-text' : []
-				}
-			}		
-		},		
-		sidebar: {
-			disabled: true
-		}
-	};
-
-})(window);
-
-</script>	
-<script src="../../lib/aloha.js"
-data-aloha-plugins="common/ui,
-                    common/format,
-                    common/table,
-                    common/list,
-                    common/link,
-                    common/highlighteditables,
-                    common/undo,
-                    common/contenthandler,
-                    common/paste,
-                    common/commands,
-                    common/block,
-                    common/image,
-                    common/align,
-                    common/dom-to-xhtml"></script>
-
-
-<script type="text/javascript">
-$ = jQuery = {fn: {jquery: 'Fake jQuery to catch accesses to the global object'}};
-define('jquery', function () {
-	return "Fake jQuery to catch access to the user's defined jQuery";
-});	
-</script>	
 
 </head>
 <body>
-<div id="main" style="top:50%;">
-<div id="content"><p>Getting started with Aloha Editor!</p></div>
+<div id="main" style="top:500px;">
+	<div id="content">
+		<p>Getting started with Aloha Editor!</p>
+		<p>Image here <img src="aloha-editor-logo.png"></p>
+	</div>
 </div>
+
+
+
 <script type="text/javascript">
 Aloha.ready( function() {
 Aloha.jQuery('#content').aloha();
