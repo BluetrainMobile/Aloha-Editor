@@ -65,11 +65,11 @@ if ( document.location.href.match(/^file:\/\//gi ) ) {
 
 // check for aloha environment
 // local app version
-//var alohaEditorPath = 'app/aloha-editor/aloha/';
+var alohaEditorPath = 'app/aloha-editor/aloha/';
 //loadJS('app/aloha-config/minimal.js');
 
 // config for demo-app in aloha dev github repos
-loadJS('app/aloha-config/minimal-demo.js');
+loadJS('app/aloha-config/full.js');
 
 // load Aloha Editor
 loadJS( alohaEditorPath + 'lib/aloha.js', 	'common/ui, \
@@ -85,6 +85,7 @@ loadJS( alohaEditorPath + 'lib/aloha.js', 	'common/ui, \
 													common/abbr, \
 													common/image,  \
 													common/contenthandler, \
+													extra/imagebrowser, \
 													cmsplugin/cms');
 
 loadCSS( alohaEditorPath + 'css/aloha.css');

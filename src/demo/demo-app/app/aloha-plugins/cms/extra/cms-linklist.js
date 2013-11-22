@@ -61,7 +61,7 @@ function ( jQuery, repository ) {
 				}
 			});
 			
-		    this.repositoryName = 'AlohaCMSLinklist';
+		    this.repositoryName = 'AlohaCMSLinklist1';
 		},
 		
 		

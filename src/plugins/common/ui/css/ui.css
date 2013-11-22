@@ -95,6 +95,8 @@
 	-webkit-border-radius: 2px;
 	border-radius:         2px;
 }
+#tab-ui-container-4 .aloha-ui-component-group span:nth-child(5),
+#tab-ui-container-4 .aloha-ui-component-group span:nth-child(7){display: none;}
 
 .aloha .aloha-ui-toolbar .ui-button-icon-only.aloha-button-active {
 	filter: alpha(opacity=100);
