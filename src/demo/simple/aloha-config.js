@@ -1,9 +1,10 @@
 ( function ( window, undefined ) {
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 
+
 	Aloha.settings = {
 		logLevels: { 'error': true, 'warn': true, 'info': true, 'debug': true, 'deprecated': true },
-		errorhandling: true,
+		errorhandling: false,
 		ribbon: {enable: false},
 		locale: 'en',
 		//waitSeconds: 300, // This can be turned on to avoid requirejs timeouts if Aloha startup code needs to be debugged
@@ -74,6 +75,7 @@
 					}
 				}
 			},
+							
 			table: {
 				// all elements with no specific configuration are not allowed to insert tables
 				config: [ 'table' ],
@@ -106,39 +108,6 @@
 				colResize: true,
 				// allow resizing the row height (default: false)
 				rowResize: true
-			},
-			image: {
-				config:{
-					'fixedAspectRatio' : true,
-					'maxWidth'         : 600,
-					'minWidth'         : 20,
-					'maxHeight'        : 600,
-					'minHeight'        : 20,
-					'globalselector'   : '.global',
-					'ui': {
-						'oneTab': true,			
-						'insert'      : false,
-						'reset'       : false,
-						'aspectRatioToggle': false, // Toggle button for the aspect ratio 
-						'align'       : false, // Menu elements to show/hide in menu
-						'resize'      : false, // Resize buttons
-						'meta'        : false,
-						'margin'      : false,
-						'crop'        : false,
-						'resizable'   : false, // Resizable ui-drag image
-						'handles'     : 'ne, se, sw, nw'  						
-					}
-				},
-				'fixedAspectRatio' : true,
-				'maxWidth'         : 600,
-				'minWidth'         : 20,
-				'maxHeight'        : 600,
-				'minHeight'        : 20,
-				'globalselector'   : '.global',
-				'ui': {
-						oneTab      : true, //Place all ui components within one tab
-	
-				}
 			},
 			formatlesspaste :{
 				formatlessPasteOption : true,
