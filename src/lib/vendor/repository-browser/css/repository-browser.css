@@ -109,7 +109,7 @@ tr.ui-search-toolbar select {margin: 1px 0px 0px 0px}
 	
 	border: 0;
 	background-color: #303539;
-	background-image: -webkit-gradient(
+	/*background-image: -webkit-gradient(
     	linear,
     	center top,
     	center bottom,
@@ -136,7 +136,7 @@ tr.ui-search-toolbar select {margin: 1px 0px 0px 0px}
 		endColorstr='#303539',
 		gradientType='0'
 	);
-	
+	*/
 	color: #ddd;
 	
 	text-shadow: 0 0 4px #23262b;
@@ -450,7 +450,7 @@ div.repository-browser-modal-window {
  **********************************************************************/
 .ui-layout-resizer {
 	background-color: #303539;
-	background-image: -webkit-gradient(
+	/*background-image: -webkit-gradient(
     	linear,
     	left center,
     	right center,
@@ -471,6 +471,7 @@ div.repository-browser-modal-window {
 		endColorstr='#303539',
 		gradientType='0'
 	);
+	*/
 }
 .ui-layout-toggler {
 	border: 1px solid #355ea0;
@@ -682,6 +683,7 @@ div.repository-browser-modal-window {
  *****************************************************************************/
 .repository-browser-tree {
 	overflow: scroll;
+	overflow-x:hidden;
 	padding-left: 4px;
 	background: #fff;
 	font-size: 12px;
@@ -695,7 +697,7 @@ div.repository-browser-modal-window {
 	height: 18px;
 	padding: 8px;
 	background-color: #303539;
-	background-image: -webkit-gradient(
+	/*background-image: -webkit-gradient(
     	linear,
     	center top,
     	center bottom,
@@ -722,7 +724,7 @@ div.repository-browser-modal-window {
 		endColorstr='#303539',
 		gradientType='0'
 	);
-	
+	*/
 	color: #ddd;
 	text-shadow: 0 0 4px #23262b;
 	font-weight: bold;
