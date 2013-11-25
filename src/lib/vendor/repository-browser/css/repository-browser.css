@@ -161,6 +161,7 @@ tr.ui-search-toolbar select {margin: 1px 0px 0px 0px}
 }
 .ui-jqgrid .ui-jqgrid-htable th {
 	background-color: #303539;
+	/*
 	background-image: -webkit-gradient(
     	linear,
     	center top,
@@ -188,6 +189,7 @@ tr.ui-search-toolbar select {margin: 1px 0px 0px 0px}
 		endColorstr='#303539',
 		gradientType='0'
 	);
+	*/
 	
 	color: #ddd;
 	text-shadow: 0 0 4px #23262b;
