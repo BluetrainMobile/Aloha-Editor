@@ -1,10 +1,10 @@
-( function ( window, undefined ) {
+ function ( window, undefined ) {
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 
 	Aloha.settings = {
-		logLevels: { 'error': true, 'warn': true, 'info': true, 'debug': false, 'deprecated': true },
+		logLevels: { 'error': true, 'warn': true, 'info': true, 'debug': false, 'deprecated': false },
 		errorhandling: false,
-		ribbon: {enable: true},
+		ribbon: {enable: false},
 		locale: 'en',
 		//waitSeconds: 300, // This can be turned on to avoid requirejs timeouts if Aloha startup code needs to be debugged
 		placeholder: {
@@ -13,11 +13,7 @@
 		repositories: {
 			linklist: {
 				data: [
-					{ name: 'Aloha Editor Developers Wiki', url:'https://github.com/alohaeditor/Aloha-Editor/wiki', type:'website', weight: 0.50 },
-					{ name: 'Aloha Editor - The HTML5 Editor', url:'http://aloha-editor.com', type:'website', weight: 0.90 },
-					{ name: 'Aloha Editor Demo', url:'http://www.aloha-editor.com/demos.html', type:'website', weight: 0.75 },
-					{ name: 'Aloha Editor Wordpress Demo', url:'http://www.aloha-editor.com/demos/wordpress-demo/index.html', type:'website', weight: 0.75 },
-					{ name: 'Aloha Editor Logo', url:'http://www.aloha-editor.com/images/aloha-editor-logo.png', type:'image', weight: 0.10 }
+					{ name: 'BTM Support', url:'http://support.bluetrainmobile.com', type:'website', weight: 0.50 },
 				]
 			}
 		},

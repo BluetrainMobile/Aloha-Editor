@@ -50,7 +50,7 @@
                     type: "GET",
                     dataType: "json",
                     async: false,
-                    url: 'http://10.1.0.158/lib/aloha/src/demo/simple/repo.json',
+                    url: '/lib/aloha/src/demo/simple2/repo.json',
                     success: function (data) {
                         //console.log('lookup data', data);
                         var items = [];

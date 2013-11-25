@@ -2,8 +2,8 @@
 	var Aloha = window.Aloha || ( window.Aloha = {} );
 
 	Aloha.settings = {
-		logLevels: { 'error': true, 'warn': true, 'info': true, 'debug': true, 'deprecated': true },
-		errorhandling: true,
+		logLevels: { 'error': true, 'warn': true, 'info': false, 'debug': false, 'deprecated': false },
+		errorhandling: false,
 		ribbon: {enable: false},
 		locale: 'en',
 		//waitSeconds: 300, // This can be turned on to avoid requirejs timeouts if Aloha startup code needs to be debugged
