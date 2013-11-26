@@ -50,7 +50,7 @@
                     type: "GET",
                     dataType: "json",
                     async: false,
-                    url: '/lib/aloha/src/demo/simple2/repo.json',
+                    url: '/lib/aloha/src/demo/simple2/repository_query.json',
                     success: function (data) {
                         //console.log('lookup data', data);
                         var items = [];
