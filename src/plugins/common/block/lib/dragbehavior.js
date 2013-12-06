@@ -1,3 +1,4 @@
+
 /*global window:true, define:true, document:true */
 /* dragbehavior.js is part of Aloha Editor project http://aloha-editor.org
  *
