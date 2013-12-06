@@ -2,7 +2,7 @@ define( [
 	'aloha',
 	'aloha/jquery',
 	'aloha/plugin',
-	'../repository.js' // custom repository
+	'/javascripts/aloha_repository.js' // custom repository
 ], function ( Aloha, jQuery, Plugin ) {
 	
 	var GENTICS = window.GENTICS;
